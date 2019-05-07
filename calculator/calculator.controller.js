@@ -13,14 +13,19 @@ class CalcCtrl {
     switch(this.operator){
       case "*":
          this.result = `${a*b}`
+         break;
       case "+":
           this.result = `${a+b}`
+          break;
       case "-":
           this.result = `${a-b}`
+          break;
       case "/":
           this.result = `${a/b}`
+          break;
       default : 
-          this.result = "Operator Not Valid"    
+          this.result = "Operator Invalid!!"    
+          break;
     }
   }
 }
