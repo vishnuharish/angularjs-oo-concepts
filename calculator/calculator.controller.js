@@ -7,7 +7,7 @@ class CalcCtrl {
      this.operator = ''
      this.result = ''
   }
-  calculate(){
+  calculate = () => {
     const a = this.a
     const b = this.b
     switch(this.operator){
