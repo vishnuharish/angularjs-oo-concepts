@@ -7,12 +7,14 @@ import './style.css';
 // Import your app functionality
 import './home'
 import './test'
+import './calculator'
 
 // Create and bootstrap application
 const requires = [
   'ui.router',
   'home',
-  'test'
+  'test',
+  'calc'
 
 ];
 
