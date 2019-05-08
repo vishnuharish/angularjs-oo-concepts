@@ -1,13 +1,14 @@
 class CalcCtrl {
 
-  constructor($scope){
+  constructor(){
     '$ngInject'
      this.a = 0
      this.b = 0
      this.operator = ''
      this.result = ''
   }
-  calculate = () => {
+
+calculate = () => {
     const a = this.a
     const b = this.b
     switch(this.operator){
@@ -27,7 +28,7 @@ class CalcCtrl {
           this.result = "Operator Invalid!!"    
           break;
     }
-  }
+  };
 }
 
 export default CalcCtrl;

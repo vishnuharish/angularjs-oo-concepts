@@ -9,7 +9,7 @@ import './home'
 import './test'
 import './calculator'
 import './calculator-directive'
-
+import 'bootstrap/dist/css/bootstrap.css'
 // Create and bootstrap application
 const requires = [
   'ui.router',
