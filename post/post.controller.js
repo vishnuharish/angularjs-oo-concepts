@@ -3,12 +3,17 @@ export default class PostCtrl {
 
     this.service = postSvc;
     this.state = $state;
-    this.posts = this.getPosts()
-    this.baseUrl = 'https://api.myjson.com/bins/awrq2';
+    this.posts = this.getPosts();
+    
 
   }
 
   getPosts = () => {
-   return []; 
+  this.service.posts().then(
+    (res) => {
+      console.log(res)
+      return res.data;
+    }
+  )
   }
 }

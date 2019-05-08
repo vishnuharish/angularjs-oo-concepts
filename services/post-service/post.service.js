@@ -8,3 +8,5 @@ class PostService{
     return this.http.get(this.baseUrl)
   }
 }
+
+export default PostService;
