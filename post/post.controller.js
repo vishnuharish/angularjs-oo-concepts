@@ -1,19 +1,14 @@
-export default class PostCtrl {
-  constructor($state, postSvc){
-
-    this.service = postSvc;
+class PostCtrl {
+  constructor($state, PostService){
+    'ngInject';
+    this.service = PostService;
     this.state = $state;
-    this.posts = this.getPosts();
-    
-
+    this.posts = this.getPosts(); 
   }
 
-  getPosts = () => {
-  this.service.posts().then(
-    (res) => {
-      console.log(res)
-      return res.data;
-    }
-  )
+  getPosts(){
+  this.service.posts()
   }
 }
+
+export default PostCtrl;

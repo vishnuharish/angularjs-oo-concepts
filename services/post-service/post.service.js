@@ -5,7 +5,14 @@ class PostService{
     this.baseUrl = 'https://api.myjson.com/bins/awrq2';
   }
   posts = () => {
-    return this.http.get(this.baseUrl)
+    return this.http({
+      url: this.baseUrl,
+      method: 'GET'
+    }).then(
+      (res) => {
+        return res.data
+      }
+    )
   }
 }
 

@@ -1,10 +1,10 @@
-{{$ctrl.posts}}
+{{$ctrl.posts | json}}
 <div class="row">
-  <div class="col-sm-6" ng-repeat="post in $ctrl.posts">
+  <div class="col-sm-6" ng-repeat="item in $ctrl.posts">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">{{post.text}}</h5>
-        <p class="card-text">{{post.published_date}}</p>
+        <h5 class="card-title">{{item.text}}</h5>
+        <p class="card-text">{{item.published_date}}</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
   </div>
