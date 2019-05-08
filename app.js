@@ -8,13 +8,15 @@ import './style.css';
 import './home'
 import './test'
 import './calculator'
+import './calculator-directive'
 
 // Create and bootstrap application
 const requires = [
   'ui.router',
   'home',
   'test',
-  'calc'
+  'calc',
+  'calculatorDirective'
 
 ];
 
