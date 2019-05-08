@@ -10,14 +10,16 @@ import './test'
 import './calculator'
 import './calculator-directive'
 import './services/post-service'
+import './post';
 // Create and bootstrap application
 const requires = [
   'ui.router',
   'home',
   'test',
   'calc',
-  'calculatorDirective',
-  'postSvc'
+  'postService',
+  'post',
+  'calculatorDirective'
 
 ];
 
