@@ -16,8 +16,7 @@ class PostCtrl {
   )
   }
   gotoPost = (postId) => {
-    console.log(postId)
-    this.state.go('posts.view-post',{'id':postId})
+    this.state.go('posts.view-post')
   }
 }
 

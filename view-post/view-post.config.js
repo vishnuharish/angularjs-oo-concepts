@@ -1,17 +1,16 @@
 function ViewPostConfig($stateProvider){
   'ngInject'
-  console.log('config')
   $stateProvider
     .state('posts.view-post', {
-      url: '/:id',
+      url: '/post',
       controller: 'ViewPostCtrl',
       controllerAs: '$ctrl',
       templateUrl: './view-post.html',
       resolve: {
         post: (PostService, $state, $stateParams) => {
-            return PostService.post($stateParams.id).then(
+            return PostService.post(1).then(
               (post) => {return post;},
-              (err) => {$state.go('home')} 
+              (err) => {console.log(err);$state.go('home')} 
             );
         }
       }
