@@ -19,7 +19,7 @@ class PostService{
   }
   getPostComments = (postId) => {
     return this.http({
-      url: `${this.baseUrl}/posts/${postId}/comments`,
+      url: `${this.baseUrl}/${postId}/comments`,
       method: 'GET'
     })
   }
