@@ -1,7 +1,7 @@
 function ViewPostConfig($stateProvider){
   'ngInject'
   $stateProvider
-    .state('posts.view-post', {
+    .state('view-post', {
       url: '/post',
       controller: 'ViewPostCtrl',
       controllerAs: '$ctrl',
