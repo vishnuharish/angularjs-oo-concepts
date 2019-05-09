@@ -11,6 +11,7 @@ import './calculator'
 import './calculator-directive'
 import './services/post-service'
 import './post';
+import './view-post'
 // Create and bootstrap application
 const requires = [
   'ui.router',
@@ -19,7 +20,8 @@ const requires = [
   'calc',
   'postService',
   'post',
-  'calculatorDirective'
+  'calculatorDirective',
+  'viewPost'
 
 ];
 

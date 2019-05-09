@@ -11,14 +11,11 @@ class PostService{
     })
   }
   post = (postId) => {
-     this.http({
+    console.log(postId)
+     return this.http({
       url: `${this.baseUrl}/${postId}`,
       method: 'GET'
-    }).then(
-      (res) => {
-          return res.data;
-      }
-    );
+    })
   }
 }
 
