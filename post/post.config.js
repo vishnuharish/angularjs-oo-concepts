@@ -2,12 +2,12 @@ function PostConfig($stateProvider) {
   'ngInject';
 
   $stateProvider
-  .state('post', {
-    url: '/post',
+  .state('posts', {
+    url: '/posts',
     controller: 'PostCtrl',
     controllerAs: '$ctrl',
-    templateUrl: 'post/post.html'
-  });
+    templateUrl: 'post/posts.html'
+  })
 
 };
 

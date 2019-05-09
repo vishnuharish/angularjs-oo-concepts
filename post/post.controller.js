@@ -3,11 +3,17 @@ class PostCtrl {
     'ngInject';
     this.service = PostService;
     this.state = $state;
-    this.posts = this.getPosts(); 
+    this.posts =  null;
+    this.getPosts();
   }
 
   getPosts(){
-  this.service.posts()
+ this.service.posts().then(
+    (res) => {
+      this.posts = res.data
+      // console.log(this.posts);
+    }
+  )
   }
 }
 
