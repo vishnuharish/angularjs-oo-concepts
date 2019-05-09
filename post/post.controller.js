@@ -16,7 +16,7 @@ class PostCtrl {
   )
   }
   gotoPost = (postId) => {
-    this.state.transitionTo('view-post')
+    this.state.transitionTo('view-post', {id: postId})
   }
 }
 
