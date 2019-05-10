@@ -23,6 +23,13 @@ class PostService{
       method: 'GET'
     })
   }
+  addPost = (post) => {
+    return this.http({
+      url: `${this.baseUrl}`,
+      method: 'POST',
+      data: post
+    })
+  }
 }
 
 export default PostService;

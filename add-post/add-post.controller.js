@@ -7,11 +7,18 @@ class AddPostCtrl {
   }
 
   addPost = () => {
-     console.log(this.post);
+     this.service.addPost(this.post).then(
+       (res) => {
+         this.state.go('posts')
+       },
+       (err) => {
+          alert(err.String())
+       }
+     )
   }
 
   cancel = () => {
-    console.log("cancelled navigate to posts");
+   this.state.go('posts')
   }
 
 }
