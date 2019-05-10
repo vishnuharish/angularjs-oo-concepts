@@ -10,8 +10,9 @@ import './test'
 import './calculator'
 import './calculator-directive'
 import './services/post-service'
-import './post';
+import './post'
 import './view-post'
+import './add-post'
 // Create and bootstrap application
 const requires = [
   'ui.router',

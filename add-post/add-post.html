@@ -1,0 +1,8 @@
+<form ng-submit="addPost()">
+  <div class="form-group">
+    <label for="post-title">Title</label>
+    <input type="text" class="form-control" id="post-title" name="title" ng-model="$ctrl.post.title" placeholder="Enter the Post title">
+  </div>
+  <button type="submit" class="btn btn-sm btn-outline-primary">Submit</button>
+    <button type="reset" ng-click="$ctrl.cancel()" class="btn btn-sm btn-outline-primary">Cancel</button>
+</form>
