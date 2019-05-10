@@ -4,11 +4,13 @@
       <div class="card-body">
         <h5 class="card-title">{{item.title}}</h5>
         <!-- <p class="card-text">{{item.published_date}}</p> -->
-        <button class="btn btn-outline-primary"
+        <button class="btn btn-sm btn-outline-primary"
           ng-click="$ctrl.gotoPost(item.id)"
           >
           View
         </button>
+        <button class="btn btn-sm btn-outline-primary" ng-click="$ctrl.editPost(item.id)">Edit</button>
+        <button class="btn btn-sm btn-outline-danger" ng-click="deletePost(item.id)">Delete</button>
       </div>
   </div>
  

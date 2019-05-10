@@ -23,6 +23,20 @@ class PostCtrl {
     console.log("goto add-post");
     this.state.transitionTo('add-post');
   }
+
+  editPost = (postId) => {
+    this.state.transitionTo('edit-post', {"id": postId})
+  }
+
+   deletePost = (postId) => {
+     this.service.deletePost(postId).then(
+       (res) => { 
+         console.log("Post Deleted");
+         this.getPost();
+       }
+     )
+
+  }
 }
 
 export default PostCtrl;

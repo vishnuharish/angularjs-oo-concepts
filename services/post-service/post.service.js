@@ -37,6 +37,12 @@ class PostService{
       data: post
     })
   } 
+  deletePost = (postId) => {
+    return this.http({
+      url: `${this.baseUrl}/${postId}`,
+      method: "DELETE"
+    })
+  }
 }
 
 export default PostService;
