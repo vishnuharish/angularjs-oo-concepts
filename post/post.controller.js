@@ -19,6 +19,9 @@ class PostCtrl {
     console.log("from controller" + postId)
     this.state.transitionTo('view-post', {"id": postId})
   }
+  addPost = () => {
+    console.log("goto Add post Form");
+  }
 }
 
 export default PostCtrl;
