@@ -8,7 +8,6 @@ function ViewPostConfig($stateProvider){
       templateUrl: './view-post.html',
       resolve: {
         post: (PostService, $state, $stateParams) => {
-          console.log($stateParams)
             return PostService.post($stateParams.id).then(
               (post) => {return post;}
             );

@@ -30,6 +30,13 @@ class PostService{
       data: post
     })
   }
+  updatePost = (post) => {
+    return this.http({
+      url: `${this.baseUrl}/${post.id}`,
+      method: "PUT",
+      data: post
+    })
+  } 
 }
 
 export default PostService;

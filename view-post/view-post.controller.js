@@ -16,5 +16,8 @@ class ViewPostCtrl{
   gotoPosts = () => {
       this.state.transitionTo('posts');
   }
+  editPost = () => {
+    this.state.transitionTo('edit-post', {'id': this.post.id})
+  }
 }
 export default ViewPostCtrl;
