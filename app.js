@@ -22,7 +22,8 @@ const requires = [
   'postService',
   'post',
   'calculatorDirective',
-  'viewPost'
+  'viewPost',
+  'addPost'
 
 ];
 

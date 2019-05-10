@@ -20,7 +20,8 @@ class PostCtrl {
     this.state.transitionTo('view-post', {"id": postId})
   }
   addPost = () => {
-    this.state.go('add-post');
+    console.log("goto add-post");
+    this.state.transitionTo('add-post');
   }
 }
 
