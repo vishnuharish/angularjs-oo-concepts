@@ -16,7 +16,7 @@ class PostCtrl {
   )
   }
   gotoPost = (postId) => {
-    console.log(postId)
+    console.log("from controller" + postId)
     this.state.transitionTo('view-post', {"id": postId})
   }
 }

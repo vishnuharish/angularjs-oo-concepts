@@ -8,9 +8,9 @@ function ViewPostConfig($stateProvider){
       templateUrl: './view-post.html',
       resolve: {
         post: (PostService, $state, $stateParams) => {
-            return PostService.post($stateParams.postId).then(
-              (post) => {return post;},
-              (err) => {console.log(err);$state.go('home')} 
+          console.log($stateParams)
+            return PostService.post($stateParams.id).then(
+              (post) => {return post;}
             );
         }
       }
