@@ -9,6 +9,7 @@ class AddPostCtrl {
   addPost = () => {
      this.service.addPost(this.post).then(
        (res) => {
+         console.log("saved Successfully !!");
          this.state.go('posts')
        },
        (err) => {
