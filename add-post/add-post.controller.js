@@ -13,7 +13,7 @@ class AddPostCtrl {
          this.state.go('posts')
        },
        (err) => {
-          alert(err.String())
+          alert(err.toString())
        }
      )
   }

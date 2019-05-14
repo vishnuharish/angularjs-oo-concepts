@@ -5,11 +5,13 @@ class PostCtrl {
     this.state = $state;
     this.posts =  null;
     this.getPosts();
+    this.showLoader = true
   }
 
   getPosts(){
  this.service.posts().then(
     (res) => {
+      this.showLoader = false;
       this.posts = res.data
       // console.log(this.posts);
     }
