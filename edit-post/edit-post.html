@@ -1,3 +1,6 @@
+<div ng-if="$ctrl.showLoader" class="row d-flex justify-content-center">
+  <spinner></spinner>
+</div>
 <h1 class="text-center">{{$ctrl.post.title}}</h1>
 <form ng-submit="$ctrl.submitPost()">
     <div class="form-group">

@@ -5,8 +5,8 @@ class EditPostCtrl {
       this.state = $state;
       this.post = post.data;
       this.service = PostService;
-      console.log(post);
-  }
+      this.showLoader = this.post ? false : true;
+    }
   submitPost = () => {
     this.service.updatePost(this.post).then(
       (res) => {

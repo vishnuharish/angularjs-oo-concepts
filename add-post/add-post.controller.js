@@ -3,7 +3,7 @@ class AddPostCtrl {
     'ngInject'
     this.state = $state;
     this.service = PostService;
-    this.post = {title: ""}
+    this.post = {title: ""};
   }
 
   addPost = () => {
